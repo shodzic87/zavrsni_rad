@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profesionalni tattoo studio specijaliziran za unikatne dizajne slagalice.">
+    <meta name="keywords" content="tattoo, slagalica, tattoo studio, unikatni dizajn, tetovaže">
+    <meta name="author" content="Slaven Hodžić">
+    <title>Jigsaw Tattoo Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: #111 url('slika1a.jpg') center/cover no-repeat fixed;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        main p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .article img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .article-content h2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .article-content h2 a:hover {
+            text-decoration: none;
+        }
+
+        .image-with-text {
+            text-align: center;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .image-with-text img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .image-with-text figcaption {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a img {
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #00f;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .form-container input:focus,
+        .form-container select:focus,
+        .form-container textarea:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery figure {
+            width: 200px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery figcaption {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-image"></div>
+        <h1>Jigsaw Tattoo Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="#pocetna">Početna</a></li>
+                <li><a href="#novosti">Novosti</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#o-nama">O nama</a></li>
+                <li><a href="#galerija">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="pocetna">
+        <h1>Umjetnost Tetoviranja: Izraz Osobnosti i Stilova</h1>
+        <h2>Povijest i Značenje Tetovaža</h2>
+        <p>
+            Tetoviranje je drevna umjetnička praksa koja seže tisućama godina unazad. Od polinezijskih plemena do modernih urbanih salona, tetovaže su oduvijek bile simbol identiteta, kulture i osobnih priča. U prošlosti su tetovaže često služile kao obred prijelaza, oznaka plemenskog identiteta ili zaštita od zlih duhova. Danas, one predstavljaju način izražavanja individualnosti, stila ili važnih trenutaka u životu.
+        </p>
+        <h2>Proces Tetoviranja: Strpljenje i Preciznost</h2>
+        <p>
+            Sam proces tetoviranja zahtijeva strpljenje, pažnju na detalje i stručnost. Umjetnik koristi posebnu mašinicu s iglom koja unosi tintu u slojeve kože. Prije početka, klijent i umjetnik zajedno biraju ili osmišljavaju dizajn koji najbolje odgovara osobnim željama. Higijena i sigurnost ključni su elementi svakog procesa, što uključuje sterilne alate i sigurne boje. Ovaj postupak, iako ponekad bolan, rezultira umjetničkim djelom koje traje cijeli život.
+        </p>
+        <h2>Tetovaže kao Odraz Osobnosti</h2>
+        <p>
+            Tetovaže nisu samo estetski ukras – one pričaju priču. Svaki dizajn, bilo da je riječ o minimalističkim linijama, velikim slikovnim kompozicijama ili tradicionalnim stilovima, nosi osobno značenje. Nekima tetovaže služe kao podsjetnik na važne ljude, događaje ili ideje, dok drugima predstavljaju čisto umjetnički izraz. Bez obzira na razloge, tetovaže su postale univerzalan jezik koji povezuje ljude različitih kultura i životnih iskustava.
+        </p>
+        <figure class="image-with-text">
+            <img src="tetovaza1.jpg" alt="Indijanska tetovaža strijele">
+            <figcaption>Indijanska tetovaža strijele</figcaption>
+        </figure>
+    </main>
+    <main id="novosti">
+        <article class="article">
+            <img src="tetovaza2.jpg" alt="Tetovaža ruže">
+            <div class="article-content">
+                <h2><a href="clanak1.html">Nova kolekcija cvjetnih tetovaža</a></h2>
+                <time datetime="2024-12-20">20. prosinca 2024.</time>
+                <p>Otkrivamo našu novu kolekciju inspiriranu cvjetnim motivima. Saznajte više o tome što nas je inspiriralo i kako možete rezervirati svoj termin.</p>
+                <a href="clanak1.html">Pročitajte više</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="tetovaza3.jpg" alt="Geometrijske tetovaže">
+            <div class="article-content">
+                <h2><a href="clanak2.html">Popularnost geometrijskih dizajna</a></h2>
+                <time datetime="2024-12-18">18. prosinca 2024.</time>
+                <p>Geometrijske tetovaže postale su veliki trend u svijetu umjetnosti. Saznajte zašto su toliko popularne i pogledajte naše najbolje radove.</p>
+                <a href="clanak2.html">Pročitajte više</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="tetovaza4.jpg" alt="Tetovaža ptice">
+            <div class="article-content">
+                <h2><a href="clanak3.html">Simbolika ptica u tetovažama</a></h2>
+                <time datetime="2024-12-15">15. prosinca 2024.</time>
+                <p>Ptice često simboliziraju slobodu i duhovnost. Saznajte više o simbolici i pogledajte naše najnovije dizajne.</p>
+                <a href="clanak3.html">Pročitajte više</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="tetovaza5.jpg" alt="Minimalistička tetovaža">
+            <div class="article-content">
+                <h2><a href="clanak4.html">Snaga minimalizma</a></h2>
+                <time datetime="2024-12-12">12. prosinca 2024.</time>
+                <p>Minimalističke tetovaže sve su popularnije zbog svoje jednostavnosti i elegancije. Pogledajte kako mi stvaramo jedinstvene dizajne.</p>
+                <a href="clanak4.html">Pročitajte više</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="tetovaza6.jpg" alt="Portretna tetovaža">
+            <div class="article-content">
+                <h2><a href="clanak5.html">Umjetnost portretnih tetovaža</a></h2>
+                <time datetime="2024-12-10">10. prosinca 2024.</time>
+                <p>Portretne tetovaže zahtijevaju preciznost i talent. Pogledajte naše najbolje radove i naučite više o procesu izrade.</p>
+                <a href="clanak5.html">Pročitajte više</a>
+            </div>
+        </article>
+    </main>
+	<main id="novosti">
+        <h1>Inspirativna Priča o Tetovažama</h1>
+        <h2>Kreativnost, Umjetnost i Povijest</h2>
+        <time datetime="2024-12-29">29. prosinca 2024.</time>
+        <p>
+            Tetovaže su oduvijek bile fascinantan dio ljudske kulture. Njihova povijest datira tisućama godina unazad, a danas su postale univerzalni simboli umjetničkog izraza, individualnosti i identiteta. U ovom članku istražujemo različite stilove tetovaža i njihova značenja.
+        </p>
+        <p>
+            Od tradicionalnih plemenskih dizajna do suvremenih minimalističkih motiva, tetovaže su prešle dug put. Umjetnici diljem svijeta koriste ih kako bi izrazili svoje ideje, a klijenti ih biraju kako bi sačuvali uspomene ili prenijeli emocije.
+        </p>
+        <p>
+            Zanimljivo je primijetiti kako se tehnologija također integrira u svijet tetoviranja. Danas postoje strojevi koji omogućuju preciznost do najsitnijeg detalja, a boje koje se koriste postaju sve sigurnije i dugotrajnije.
+        </p>
+        <p>
+            U našoj galeriji možete vidjeti nevjerojatne primjere umjetničkih tetovaža. Svaka slika priča jedinstvenu priču, a dizajni su rezultat suradnje između umjetnika i klijenta. Osim toga, simbolika iza svakog dizajna čini ga još posebnijim.
+        </p>
+        <p>
+            Na kraju, tetovaže nisu samo ukrasi – one su priče koje nosimo na svojoj koži. Bez obzira na stil, veličinu ili boje, svaka tetovaža ima značenje koje je važno osobi koja je nosi.
+        </p>
+        <div class="gallery">
+            <figure class="image-with-text">
+                <img src="tattoo1.jpg" alt="Apstraktna tetovaža">
+                <figcaption>Apstraktna tetovaža - umjetnost bez granica</figcaption>
+            </figure>
+            <figure class="image-with-text">
+                <img src="tattoo2.jpg" alt="Realističan portret">
+                <figcaption>Realističan portret - vještina i preciznost</figcaption>
+            </figure>
+            <figure class="image-with-text">
+                <img src="tattoo3.jpg" alt="Simbolička tetovaža">
+                <figcaption>Simbolička tetovaža - priča kroz slike</figcaption>
+            </figure>
+            <figure class="image-with-text">
+                <img src="tattoo4.jpg" alt="Minimalistički dizajn">
+                <figcaption>Minimalistički dizajn - snaga jednostavnosti</figcaption>
+            </figure>
+        </div>
+        <p><a href="#pocetna">Natrag na početak</a></p>
+    </main>
+	<main id="kontakt">
+        <h1>Kontaktirajte nas</h1>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required>
+                
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required>
+                
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Unesite ispravnu e-mail adresu.">
+                
+                <label for="drzava">Država:</label>
+                <select id="drzava" name="drzava" required>
+                    <option value="" disabled selected>Odaberite državu</option>
+                    <option value="Hrvatska">Hrvatska</option>
+                    <option value="Srbija">Srbija</option>
+                    <option value="Bosna i Hercegovina">Bosna i Hercegovina</option>
+                    <option value="Slovenija">Slovenija</option>
+                </select>
+                
+                <label for="opis">Vaša poruka:</label>
+                <textarea id="opis" name="opis" rows="5" required></textarea>
+                
+                <button type="submit">Pošaljite</button>
+            </form>
+        </div>
+        <h2>Naša lokacija</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.3472677435335!2d15.935470315977113!3d45.774446921180266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1321d09f043%3A0x58992a411bf720a0!2sLani%C5%A1te%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1700000000000!5m2!1shr!2shr" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </main>
+	<main id="galerija">
+        <h1>Galerija Tetovaža</h1>
+        <div class="gallery">
+            <figure>
+                <a href="t1.jpg" target="_blank">
+                    <img src="t1.jpg" alt="Tetovaža 1">
+                </a>
+                <figcaption>Viking tetovaža </figcaption>
+            </figure>
+            <figure>
+                <a href="t2.jpg" target="_blank">
+                    <img src="t2.jpg" alt="Tetovaža 2">
+                </a>
+                <figcaption>Apstraktni viking</figcaption>
+            </figure>
+            <figure>
+                <a href="t3.jpg" target="_blank">
+                    <img src="t3.jpg" alt="Tetovaža 3">
+                </a>
+                <figcaption>Morski viking</figcaption>
+            </figure>
+            <figure>
+                <a href="t4.jpg" target="_blank">
+                    <img src="t4.jpg" alt="Tetovaža 4">
+                </a>
+                <figcaption>Glava viking</figcaption>
+            </figure>
+            <figure>
+                <a href="t5.jpg" target="_blank">
+                    <img src="t5.jpg" alt="Tetovaža 5">
+                </a>
+                <figcaption>Realističan portret vikinga</figcaption>
+            </figure>
+            <figure>
+                <a href="t6.jpg" target="_blank">
+                    <img src="t6.jpg" alt="Tetovaža 6">
+                </a>
+                <figcaption>Viking pogled u daljinu</figcaption>
+            </figure>
+            <figure>
+                <a href="t7.jpg" target="_blank">
+                    <img src="t7.jpg" alt="Tetovaža 7">
+                </a>
+                <figcaption>Thor</figcaption>
+            </figure>
+            <figure>
+                <a href="t8.jpg" target="_blank">
+                    <img src="t8.jpg" alt="Tetovaža 8">
+                </a>
+                <figcaption>Kaciga vikinga</figcaption>
+            </figure>
+            <figure>
+                <a href="t9.jpg" target="_blank">
+                    <img src="t9.jpg" alt="Tetovaža 9">
+                </a>
+                <figcaption>Mačevi vikinga</figcaption>
+            </figure>
+            <figure>
+                <a href="t10.jpg" target="_blank">
+                    <img src="t10.jpg" alt="Tetovaža 10">
+                </a>
+                <figcaption>Pogled vikinga</figcaption>
+            </figure>
+        </div>
+    </main>
+	<main id="o-nama">
+        <h1>O nama</h1>
+        <p>
+            Tetoviranjem sam se počeo baviti iz ljubavi prema crtanju koja traje godinama. Još kao dijete uvijek sam uživao u stvaranju crteža i vizualnih priča. Ta strast me dovela do svijeta tetovaža, gdje sada imam priliku pretvoriti umjetnost u nešto trajno i jedinstveno na koži svojih klijenata.
+        </p>
+        <p>
+            Najviše volim gledati zadovoljne klijente kako s osmijehom izlaze iz mog studija. Njihova sreća i povjerenje koje mi poklanjaju dok ukrašavam njihovo tijelo za mene su neprocjenjivi. Svaka tetovaža priča priču, a ja sam ponosan što mogu biti dio tih trenutaka.
+        </p>
+        <p>
+            Osim tetoviranja, uživam u druženju s ljudima i stvaranju pozitivne atmosfere u svom studiju. Moj cilj nije samo pružiti kvalitetnu uslugu, već i omogućiti klijentima da se osjećaju ugodno, opušteno i sigurno dok zajedno stvaramo umjetnost.
+        </p>
+        <video controls>
+            <source src="tattoo_video.mp4" type="video/mp4">
+            Vaš preglednik ne podržava video element. Molimo vas da ažurirate preglednik.
+        </video>
+        <p>
+            Hvala vam na ukazanom povjerenju i što ste dio naše umjetničke zajednice. Radujem se što mogu podijeliti svoju strast i znanje s vama!
+        </p>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Social media:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p>
+                Copyright &copy; 2024 Slaven Hodžić 
+                <a href="https://github.com/shodzic87" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20">
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
